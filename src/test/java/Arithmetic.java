@@ -20,18 +20,24 @@ public class Arithmetic {
         int a = 10;
         int b = 32;
         int c = a*b;
-        Assert.assertEquals(c,320);
+        Assert.assertEquals(c,32);
         System.out.println("Successfully executed Multiply Method-1");
     }
 
     @Test (groups = {"Addition"})
-    public void AddtionMethon2(){
-
+    public void AddtionMeth(){
         int a = 32;
         int b = 44;
         int c = a+b;
-        Assert.assertEquals(c,76);
-        System.out.println("Successfully executed Addtion Method-2");
+        Assert.assertEquals(c,786);
+        System.out.println("Successfully executed Addtion Method-2");}
+    @Test (groups = {"Addition"})
+    public void Addt(){
+        int a = 31;
+        int b = 23;
+        int c = a+b;
+        Assert.assertEquals(c,54);
+        System.out.println("Successfully executed Addtion Method-3");
     }
 
     @Test
@@ -54,14 +60,7 @@ public class Arithmetic {
         System.out.println("Successfully executed Multiply Method-3");
     }
 
-    @Test (groups = {"Addition"})
-    public void AddtionMethod3(){
-        int a = 31;
-        int b = 23;
-        int c = a+b;
-        Assert.assertEquals(c,54);
-        System.out.println("Successfully executed Addtion Method-3");
-    }
+
 }
 
 

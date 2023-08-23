@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+<listeners>
+    <listener class-name="ListenersExample"></listener>
+</listeners>
+    <!-- <groups>
+         <run>
+             <include name ="Addition"/>
+         </run>
+     </groups>-->
+     <test verbose="2" preserve-order="true"
+           name="C:/Users/javva/Downloads/Git repository/LearningTestNg/src/test">
 
-    <!--<groups>
-        <run>
-            <include name ="Addition"/>
-        </run>
-    </groups>-->
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/javva/Downloads/Git repository/LearningTestNg/src/test">
-        <classes>
-            <!--<class name="Arithmetic"/> -->
-            <class name="AnnotationsPractice"/>
-
-
-        </classes>
-    </test>
-</suite>
+         <classes>
+             <!--<class name="Arithmetic"/>
+              <class name="AnnotationsPractice"/>
+             <class name="DataProviderExample"/>
+             <class name="DataproviderInSeperateClassExample"/>
+             <class name="ITestResultExample"/>
+             <class name="ListenersPractice"/>-->
+            <class name="Screenshot"/>
+         </classes>
+     </test>
+ </suite>
